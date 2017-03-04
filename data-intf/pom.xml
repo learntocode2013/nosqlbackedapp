@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.learn.nosql</groupId>
+        <artifactId>nosql-backed-app</artifactId>
+        <version>1.0</version>
+    </parent>
+
+    <groupId>org.learn.nosql.dif</groupId>
+    <artifactId>data-intf</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+
+    <dependencies>
+
+        <!-- Add dependency for Cassandra driver -->
+        <dependency>
+            <groupId>com.datastax.cassandra</groupId>
+            <artifactId>cassandra-driver-core</artifactId>
+            <version>${cassandra.driver.version}</version>
+        </dependency>
+
+        <!-- Add dependency for Cassandra object mapper -->
+        <dependency>
+            <groupId>com.datastax.cassandra</groupId>
+            <artifactId>cassandra-driver-mapping</artifactId>
+            <version>${cassandra.driver.version}</version>
+        </dependency>
+
+        <!-- Add dependency for a logger implementation -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+
+        <!-- Make common project utilities available for use -->
+        <dependency>
+            <groupId>org.learn.nosql.utils</groupId>
+            <artifactId>utils</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
+
+    
+</project>

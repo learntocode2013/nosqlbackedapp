@@ -1,0 +1,7 @@
+# =============== Learning objectives =============
+
+# Add all dependencies for cassandra driver.
+
+# Explore the bounded context to divide project into modules.
+
+# Explore ways to deploy service with docker.
